@@ -37,7 +37,8 @@ for display_name, yf_ticker in INDICES.items():
     except Exception as e:
         print(f"Error processing {display_name}: {e}")
 
-output_path = '/Users/elchinsuleymanov/Documents/Claude-Code/indices/stock_data.json'
+import os
+output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'stock_data.json')
 with open(output_path, 'w') as f:
     json.dump(result, f)
 
