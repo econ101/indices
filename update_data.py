@@ -8,8 +8,13 @@ INDICES = {
     'SPX': '^GSPC',           # S&P 500
     'NASDAQ': '^IXIC',        # Nasdaq Composite
     'DJI': '^DJI',            # Dow Jones Industrial Average
-    'MSCI_WORLD': 'URTH',     # iShares MSCI World ETF (proxy for MSCI World)
-    'MSCI_EXUS': 'ACWX'       # iShares MSCI ACWI ex US ETF (proxy for MSCI ex-US)
+    'EUROPE': 'VGK',          # Vanguard Europe ETF
+    'CHINA': 'MCHI',          # iShares MSCI China ETF
+    'JAPAN': 'EWJ',           # iShares MSCI Japan ETF
+    'EM': 'VWO',              # Vanguard Emerging Markets ETF
+    'DM': 'VEA',              # Vanguard Developed Markets ETF
+    'MSCI_WORLD': 'URTH',     # iShares MSCI World ETF
+    'MSCI_EXUS': 'ACWX'       # iShares MSCI ACWI ex US ETF
 }
 
 print("Fetching global indices data...")
